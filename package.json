@@ -1,0 +1,45 @@
+{
+  "name": "animate-prop",
+  "version": "0.5.0",
+  "description": "Single, dependency-free function to tween a property. Use that on canvas or anywhere else.",
+  "license": "MIT",
+  "repository": "bfred-it/animate-prop",
+  "author": {
+    "name": "Federico Brigante",
+    "email": "bfred-it@users.noreply.github.com",
+    "url": "twitter.com/bfred_it"
+  },
+  "keywords": [
+    "browser",
+    "animate",
+    "animation",
+    "tween",
+    "transition"
+  ],
+  "files": [
+    "index.js",
+    "dist/animate-prop.node.js"
+  ],
+  "main": "dist/animate-prop.node.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "build": "npm run es5 && npm run export && npm run minify",
+    "export": "browserify index.js --standalone animateProp > dist/animate-prop.js",
+    "minify": "uglifyjs dist/animate-prop.js > dist/animate-prop.min.js",
+    "es5": "babel index.js > dist/animate-prop.node.js",
+    "prepublish": "npm run es5"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1",
+    "uglifyjs": "^2.4.10"
+  }
+}
