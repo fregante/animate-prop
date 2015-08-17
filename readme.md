@@ -4,6 +4,8 @@
 
 This is a very simple and low-level function tween/animate/update a value over time. If you're looking for something that updates DOM elements directly, try the excellent but 60 times heavier [TweenLite](https://greensock.com/tweenlite) (+its CSS Plugin).
 
+Originally from the article ["Animation with HTML5 Canvas"](http://codular.com/animation-with-html5-canvas), where you can see more examples.
+
 ## Usage
 
 ```js
