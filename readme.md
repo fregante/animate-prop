@@ -1,4 +1,4 @@
-# animate-prop [![module size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.min.js?compression=gzip)](https://github.com/bfred-it/animate-prop/blob/master/dist/animate-prop.min.js)
+# animate-prop [![module size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.node.min.js?compression=gzip)](https://github.com/bfred-it/animate-prop/blob/master/dist/animate-prop.min.js)
 
 > Single, dependency-free function to tween a property. Use that on canvas or anywhere else.
 
@@ -96,6 +96,7 @@ Here's an explanation of the files included in this repo
 * `dist/animate-prop.js`: browser-ready file with AMD or a global variable called `animateProp`
 * `dist/animate-prop.min.js`: same as above, minified
 * `dist/animate-prop.node.js`: used by node/browserify with `require('animate-prop')`
+* `dist/animate-prop.node.min.js`: same as above, but minified, for byte counting only
 
 ## Dependencies
 
