@@ -2,34 +2,30 @@
   "name": "animate-prop",
   "version": "1.0.0",
   "description": "Single, dependency-free function to tween a property. Use that on canvas or anywhere else.",
-  "license": "MIT",
-  "repository": "bfred-it/animate-prop",
-  "author": {
-    "name": "Federico Brigante",
-    "email": "bfred-it@users.noreply.github.com",
-    "url": "twitter.com/bfred_it"
-  },
   "keywords": [
-    "browser",
     "animate",
     "animation",
-    "tween",
-    "transition"
+    "browser",
+    "transition",
+    "tween"
   ],
+  "repository": "fregante/animate-prop",
+  "license": "MIT",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "files": [
     "index.js",
     "dist/animate-prop.node.js"
   ],
   "main": "dist/animate-prop.node.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "scripts": {
     "build": "./node_modules/bfred-npm-bundler/tasks/all.sh index.js animateProp animate-prop",
-    "to-npm": "./node_modules/bfred-npm-bundler/tasks/to-npm.sh index.js animate-prop",
-    "prepublish": "npm run to-npm"
+    "prepublish": "npm run to-npm",
+    "to-npm": "./node_modules/bfred-npm-bundler/tasks/to-npm.sh index.js animate-prop"
   },
   "devDependencies": {
     "bfred-npm-bundler": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }

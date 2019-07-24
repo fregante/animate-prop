@@ -1,10 +1,10 @@
-# animate-prop [![module size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/animate-prop/master/dist/animate-prop.node.min.js?compression=gzip)](https://github.com/bfred-it/animate-prop/blob/master/dist/animate-prop.min.js)
+# animate-prop [![module size](https://badge-size.herokuapp.com/fregante/animate-prop/master/dist/animate-prop.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/fregante/animate-prop/master/dist/animate-prop.node.min.js?compression=gzip)](https://github.com/fregante/animate-prop/blob/master/dist/animate-prop.min.js)
 
 > Single, dependency-free function to tween a property. Use that on canvas or anywhere else.
 
 This is a very simple and low-level function tween/animate/update a value over time. If you're looking for something that updates DOM elements directly, try the excellent but 60 times heavier [TweenLite](https://greensock.com/tweenlite) (+its CSS Plugin).
 
-Originally from the article ["Animation with HTML5 Canvas"](http://codular.com/animation-with-html5-canvas), where you can see more examples.
+Originally from the article ["Animation with HTML5 Canvas"](https://codular.com/animation-with-html5-canvas), where you can see more examples.
 
 ## Usage
 
@@ -61,7 +61,7 @@ Sequence tweens
 var obj = { x: 5, y: 100 };
 
 animateProp(obj, 'x', 10, 1000, function () {
-	animateProp(obj, 'y', 300, 500);	
+	animateProp(obj, 'y', 300, 500);
 });
 ```
 
@@ -100,14 +100,14 @@ Here's an explanation of the files included in this repo
 
 ## Dependencies
 
-No dependencies, but it needs `window.requestAnimationFrame` to be there ([IE10+](http://caniuse.com/#feat=requestanimationframe) or [with polyfill](https://gist.github.com/paulirish/1579671))
+No dependencies, but it needs `window.requestAnimationFrame` to be there ([IE10+](https://caniuse.com/#feat=requestanimationframe) or [with polyfill](https://gist.github.com/paulirish/1579671))
 
 Easing functions are not included. Provide your own or use [`easiness`](https://github.com/jaz303/easiness)
 
 ## Used on
 
-* http://away.gorving.com/ — canvas/video masking animation
+* https://away.gorving.com/ — canvas/video masking animation
 
 ## License
 
-MIT © [Federico Brigante](http://twitter.com/bfred_it)
+MIT © [Federico Brigante](https://bfred.it)
